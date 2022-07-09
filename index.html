@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movements</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      p {
+        font-family: Avenir, sans-serif;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      h1 {
+        color: #864b79;
+        font-size: 50px;
+        margin: 10px;
+      }
+
+      h3 {
+        color: #864b79;
+        font-weight: 500;
+      }
+
+      body {
+        background: linear-gradient(to top, #c0a04c 0%, #d1c197 100%);
+      }
+
+      button {
+        display: block;
+        margin: auto;
+        background: #864b79;
+        color: white;
+        font-size: 20px;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: white;
+        color: #864b79;
+        border: 1px solid #864b79;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        max-width: 600px;
+        border: solid #864b79;
+        border-radius: 20px;
+      }
+
+      a {
+        max-width: 500px;
+        margin: 0 auto;
+        text-decoration: none;
+      }
+
+      .builder {
+        text-align: center;
+        font-size: 14px;
+        line-height: 80px;
+      }
+
+      .format {
+        font-size: 20px;
+        font-weight: 500;
+        color: whitesmoke;
+        padding: 0px 0px 20px;
+      }
+
+      .watch {
+        display: block;
+        text-align: center;
+        color: whitesmoke;
+        padding-top: 30px;
+      }
+
+      .thin-line {
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 200ms ease-in-out;
+      }
+
+      .thin-line:hover {
+        color: whitesmoke;
+        text-decoration: underline;
+      }
+
+      .trailer {
+        display: block;
+        transition: all 200ms ease-in-out;
+      }
+
+      .trailer:hover {
+        opacity: 0.7;
+      }
+      .container {
+        max-width: 600px;
+        padding: 10px 20px;
+        background: whitesmoke;
+        border: 2px solid #864b79;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MOVEMENTS</h1>
+    <h1 class="format">A short documentary</h1>
+    <div class="container">
+      <p>
+        Commissioned by the LA Jazz Society, Jonah Levine embarks on a journey
+        of creativity as he writes and composes a jazz suite representing Los
+        Angeles with his collective of diverse musicians. Working together, the
+        <em>Jonah Levine Collective</em> collaborates and rehearses his musical
+        compositions days prior to their final performance at the Moss Theater.
+      </p>
+      <hr />
+      <h3>CREDITS</h3>
+      <p>
+        <strong>Director/Producer:</strong> Melissa Ramos
+        <br />
+        <strong>Associate Producer:</strong> Maria C. Lennon
+        <br />
+        <strong>Directors of Photography:</strong> Ernesto Ortiz & Angeline
+        Pante
+        <br />
+        <strong>Sound:</strong> Justin Smith & Martin Ibarra
+        <br />
+        <strong>Editor:</strong> Sam Aklyan
+      </p>
+    </div>
+
+    <p class="watch">Click the image below to watch the trailer 🎥</p>
+
+    <a href="https://youtu.be/6btwza2MKFw" target="_blank" class="trailer">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/306/original/MOVEMENTS_-_Piano_Still-Purple.jpg?1646094526"
+        width="500"
+      />
+    </a>
+
+    <br />
+
+    <a
+      href="https://www.facebook.com/thinlinefest/"
+      target="_blank"
+      class="thin-line"
+    >
+      <h2>Premiering at Thin Line Fest!</h2>
+    </a>
+
+    <button>Get Notified</button>
+
+    <span class="builder">
+      <p>
+        This page was built by
+        <a href="https://www.instagram.com/melissaar/" target="_blank">
+          <em>Melissa Ibarra-Ramos</em>
+        </a>
+      </p>
+    </span>
+
+    <script>
+      function signUp() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+
+        if (name.length > 0) {
+          alert("Thank you, " + name + "! Enjoy watching 🍿");
+        } else {
+          alert("Thank you! Enjoy watching 🍿");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
