@@ -99,12 +99,12 @@
         text-decoration: underline;
       }
 
-      .trailer {
+      .short-film {
         display: block;
         transition: all 200ms ease-in-out;
       }
 
-      .trailer:hover {
+      .short-film:hover {
         opacity: 0.7;
       }
       .container {
@@ -144,26 +144,14 @@
       </p>
     </div>
 
-    <p class="watch">Click the image below to watch the trailer 🎥</p>
+    <p class="watch">Click the image below to watch the short film 🎥</p>
 
-    <a href="https://youtu.be/6btwza2MKFw" target="_blank" class="trailer">
+    <a href="https://youtu.be/-kPeU-lnUfE" target="_blank" class="short-film">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/306/original/MOVEMENTS_-_Piano_Still-Purple.jpg?1646094526"
-        width="500"
+        width="350"
       />
     </a>
-
-    <br />
-
-    <a
-      href="https://www.facebook.com/thinlinefest/"
-      target="_blank"
-      class="thin-line"
-    >
-      <h2>Premiering at Thin Line Fest!</h2>
-    </a>
-
-    <button>Get Notified</button>
 
     <span class="builder">
       <p>
@@ -173,20 +161,5 @@
         </a>
       </p>
     </span>
-
-    <script>
-      function signUp() {
-        let name = prompt("What is your name?");
-        let email = prompt("What is your email?");
-
-        if (name.length > 0) {
-          alert("Thank you, " + name + "! Enjoy watching 🍿");
-        } else {
-          alert("Thank you! Enjoy watching 🍿");
-        }
-      }
-      let button = document.querySelector("button");
-      button.addEventListener("click", signUp);
-    </script>
   </body>
 </html>
